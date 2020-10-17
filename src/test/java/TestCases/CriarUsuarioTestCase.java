@@ -12,7 +12,7 @@ public class CriarUsuarioTestCase extends BaseTest{
 	private TaskHome taskHome = new TaskHome(driver);
 	
 	@Test
-	public void realizarCadastro() throws InterruptedException {
+	public void realizarCadastro() throws InterruptedException  {
 		taskHome.acessPageAutomationWeb();
 	}
 
