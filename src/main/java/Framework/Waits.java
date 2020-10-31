@@ -28,10 +28,6 @@ public class Waits {
 			return element;
 		}
 		
-	}
-	
-	
-	
-	
+	}	
 
 }
