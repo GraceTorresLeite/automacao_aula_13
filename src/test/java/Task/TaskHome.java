@@ -2,16 +2,13 @@ package Task;
 
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
-import Framework.Waits;
-import PageObjects.HomePage;
+
+import com.aventstack.extentreports.Status;
 
 import Framework.Report;
 import Framework.Screenshot;
 import Framework.Waits;
 import PageObjects.HomePage;
-import com.aventstack.extentreports.Status;
-import org.junit.jupiter.api.Assertions;
-import org.openqa.selenium.WebDriver;
 
 public class TaskHome {
 

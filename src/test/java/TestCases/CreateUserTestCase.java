@@ -3,24 +3,21 @@ package TestCases;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 
+import com.aventstack.extentreports.Status;
+
 import Framework.BaseTest;
-import Task.TaskHome;
-	
 import Framework.Report;
 import Framework.Screenshot;
-	
-import com.aventstack.extentreports.Status;
-import org.junit.jupiter.api.Test;
-import org.openqa.selenium.WebDriver;
+import Task.TaskHome;
 
-	public class CriarUsuarioTestCase extends BaseTest {
+	public class CreateUserTestCase extends BaseTest {
 
 	    private WebDriver driver = this.getDriver();
 	    private TaskHome  taskHome = new TaskHome(driver);
 
 
 	    @Test
-	    public void realizarCadastro() {
+	    public void registerNewUser() {
 
 	        try{
 

@@ -1,9 +1,8 @@
 package Framework;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
-
-import java.io.IOException;
 
 public class BaseTest extends DriverManager{
 

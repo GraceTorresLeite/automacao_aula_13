@@ -1,45 +1,71 @@
 package Utils;
 
+import java.util.Locale;
+
+import org.openqa.selenium.WebDriver;
+
 import com.github.javafaker.Faker;
-import com.github.javafaker.University;
 
 public class FakerGeneration {
-	
-	Faker faker = new Faker();
 
-	String name; // Miss Samanta Schmidt
-	String firstName; // Emory
-	String lastName; // Barton
-	String email;
-	String gender;
-	String age;
+	private Faker faker;
+	private String firstName;
+	private String lastName;
+	private String email;
+	private String university;
+	private String profession;
+	private String genre;
+	private String age;
+	private String address;
 
-	String streetAddress = faker.address().streetAddress(); // 60018 Sawayn Brooks Suite 449S
+	public FakerGeneration(WebDriver driver) {
+
+		faker = new Faker(new Locale("pt-BR"));
+	}
 
 	public String getFirstName() {
-		//name = faker.name().fullName();
+
 		firstName = faker.name().firstName();
-		return firstName;	
+		return firstName;
 	}
-	
+
 	public String getLastName() {
 		lastName = faker.name().lastName();
 		return lastName;
-		
+
 	}
-	
+
 	public String getEmail() {
 		email = faker.internet().emailAddress();
 		return email;
 	}
-	
-	public String getGender() {
-		gender = faker.demographic().sex();
-		    return gender;
-		}
-	
+
+	public String getUniversity() {
+
+		university = faker.university().name();
+		return university;
+	}
+
+	public String getProfession() {
+
+		profession = faker.job().title();
+		return profession;
+	}
+
+	public String getGenre() {
+		genre = faker.demographic().sex();
+		return genre;
+	}
+
 	public String getAge() {
+
 		age = faker.number().digit();
-		    return age;
-		}
+		return age;
+	}
+
+	public String getAddress() {
+
+		address = faker.address().streetAddress();
+		return address;
+	}
 }
